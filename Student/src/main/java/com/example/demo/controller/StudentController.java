@@ -31,7 +31,7 @@ public class StudentController {
 	public List<Student> read(){
 		return service.getStudent();
 	}
-	@GetMapping("/customer/{id}")
+	@GetMapping("/student/{id}")
 	public Optional<Student> readById(@PathVariable int id){
 		return service.getStudentById(id);
 	}
